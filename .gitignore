@@ -1,11 +1,20 @@
 # Dependencies
 node_modules/
 package-lock.json
+**/node_modules/
 
 # Build outputs
 .next/
 out/
 dist/
+build/
+**/build/
+
+# Website specific
+website/node_modules/
+website/.next/
+website/build/
+website/dist/
 
 # TypeScript
 *.tsbuildinfo
