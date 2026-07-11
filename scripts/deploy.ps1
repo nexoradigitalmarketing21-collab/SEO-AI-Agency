@@ -17,13 +17,13 @@ switch ($Target) {
     }
     "Local" {
         Write-Host "Deploying locally..." -ForegroundColor Yellow
-        cd ../website
+        Set-Location -Path "../website"
         npm run build
         npm start
     }
     "Vercel" {
         Write-Host "Deploying to Vercel..." -ForegroundColor Yellow
-        cd ../website
+        Set-Location -Path "../website"
         vercel --prod
     }
 }
