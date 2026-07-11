@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Premium AI-Powered SEO Agency Website",
   "private": true,
+  "prisma": {
+    "schema": "./prisma/schema.prisma"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
